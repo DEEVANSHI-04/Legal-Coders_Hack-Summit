@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleSage - Fashion & Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">StyleSage</div>
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#recommendations" class="nav-link">Recommendations</a></li>
+                <li><a href="#occasions" class="nav-link">Occasions</a></li>
+                <li><a href="#weather" class="nav-link">Weather</a></li>
+                <li><a href="#weather-app" class="nav-link">Weather App</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <h1>Welcome to StyleSage</h1>
+            <p>Your Personal Outfit Recommendation Assistant.Welcome to StyleSage, your personal outfit recommendation assistant! ✨ Whether you're dressing for a casual day out, a formal event, or the perfect weather, we've got you covered. 🌟 Get AI-powered fashion suggestions, try outfits virtually, and explore the latest trends effortlessly. Style smart, feel confident! 👗👕</p>
+            
+            <div class="featured-categories">
+                <div class="category">
+                    <img src="casgirl.webp" alt="Casual Wear">
+                    <h3>Casual</h3>
+                    <p>Comfortable everyday outfits</p>
+                </div>
+                <div class="category">
+                    <img src="casual.avif" alt="Formal Wear">
+                    <h3>Formal</h3>
+                    <p>Elegant attire for special occasions</p>
+                </div>
+                <div class="category">
+                    <img src="sports.jpg" alt="Sports Wear">
+                    <h3>Sports</h3>
+                    <p>Athletic and performance clothing</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section id="recommendations" class="section">
+            <h2>Get Your Perfect Outfit</h2>
+            <p>Welcome to our interactive platform! To enhance your experience, we have integrated multiple applications into a single interface. You can seamlessly switch between different functionalities using the sidebar menu on the left. Whether you're looking for fashion recommendations, AI-powered insights, or any other feature, simply select the desired option to begin. Each section is designed to provide a smooth and intuitive user experience, making it easy to navigate and explore. We hope you enjoy using this platform and make the most out of its features!    </p>
+            <div class="recommendation-form">
+                <select id="gender-select">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <select id="occasion-select">
+                    <option value="">Select Occasion</option>
+                    <option value="casual">Casual</option>
+                    <option value="formal">Formal</option>
+                    <option value="sports">Sports</option>
+                </select>
+                <button id="recommend-btn">Get Recommendations</button>
+            </div>
+            <div id="recommendation-result" class="result-container"></div>
+        </section>
+
+        <!-- Occasions Section -->
+        <section id="occasions" class="section">
+            <h2>Outfit Ideas for Every Occasion</h2>
+            <p>Dressing right for any event can elevate your confidence and style. For weddings, embrace elegance with flowing gowns, classic sarees, or well-fitted suits that exude sophistication. In a business setting, opt for tailored blazers, sleek dresses, or formal suits to create a professional and polished look. When it’s time to party, go bold with chic cocktail dresses, stylish jumpsuits, or trendy blazers that make a statement. No matter the occasion, the perfect outfit helps you stand out while staying comfortable and fashionable.</p>
+            <div class="occasion-grid">
+                <div class="occasion-item" data-occasion="wedding">
+                    <img src="wedding.jpg" alt="Wedding Outfit">
+                    <h3>Wedding</h3>
+                </div>
+                <div class="occasion-item" data-occasion="business">
+                    <img src="bussiness.jpg" alt="Business Outfit">
+                    <h3>Business</h3>
+                </div>
+                <div class="occasion-item" data-occasion="party">
+                    <img src="party.jpg" alt="Party Outfit">
+                    <h3>Party</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather" class="section">
+            <h2>Weather-Based Outfit Recommendations</h2>
+            <p>Dressing for the weather keeps you stylish and comfortable. In summer☀️, choose breathable fabrics like cotton and linen, pairing light outfits with sunglasses. For winter⛄, layer up with wool coats, sweaters, and boots to stay warm. During rainy days⛈️, opt for waterproof jackets and boots. In spring and autumn🍂, light jackets and cardigans provide the perfect balance. Stay fashionable while dressing smart for any season!</p>
+            <br>
+            <br>
+            <br>
+            <div class="weather-form">
+                <input type="number" id="temperature" placeholder="Enter Temperature (°C)">
+                <select id="weather-type">
+                    <option value="">Select Weather Type</option>
+                    <option value="hot">Hot</option>
+                    <option value="warm">Warm</option>
+                    <option value="cool">Cool</option>
+                    <option value="cold">Cold</option>
+                    <option value="rainy">Rainy</option>
+                </select>
+                <button id="weather-recommend-btn">Get Weather Outfit</button>
+            </div>
+            <div id="weather-result" class="result-container"></div>
+        </section>
+
+        <!-- Weather App Section -->
+        <section id="weather-app" class="section">
+            <h2>Weather App</h2>
+            <div class="card">
+                <div class="search">
+                    <input type="text" placeholder="Enter city name" spellcheck="false" />
+                    <button><img src="weather-app/img/search.png" alt="" /></button>
+                </div>
+                <div class="error">
+                    <p>Invalid city name.</p>
+                </div>
+                <div class="weather">
+                    <img src="weather-app/img/rain.png" class="weather-icon" alt="" />
+                    <h1 class="temp">22°C</h1>
+                    <h2 class="city">New York</h2>
+                    <div class="details">
+                        <div class="col">
+                            <img src="weather-app/img/humidity.png" alt="" />
+                            <div>
+                                <p class="humidity">50%</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="weather-app/img/wind.png" alt="" />
+                            <div>
+                                <p class="wind">15 km/h</p>
+                                <p>Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <br>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>StyleSage</h3>
+                <p>Your Personal Fashion Assistant</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 StyleSage. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
