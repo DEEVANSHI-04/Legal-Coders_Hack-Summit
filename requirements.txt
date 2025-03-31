@@ -7,4 +7,4 @@ pandas
 openCV
 pillow
 scikit-learn
-google.generative ai
+google-generativeai
