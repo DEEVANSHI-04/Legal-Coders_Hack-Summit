@@ -33,7 +33,7 @@ from numpy.linalg import norm
 import google.generativeai as genai
 
 # Configure Google Gemini API
-genai.configure(api_key="AIzaSyAIbaU3vaR2mDaO2we4p7qjbKoDaRlwTg8")
+genai.configure(api_key="{Your API key}")
 
 generation_config = {
     "temperature": 1,
