@@ -17,9 +17,9 @@ The **AI-Based Fashion Recommender & Stylist** is a smart system that provides p
 
 ## 🛠️ Tech Stack
 - **Frontend**: Streamlit (for UI)
-- **Backend**: Flask (if applicable) & Python
+- **Backend**: Python
 - **Machine Learning**: TensorFlow/Keras (for image-based model)
-- **Dataset**: DeepFashion-1 (for training the recommendation model)
+- **Dataset**: Image Dataset from Kaggle
 - **Chatbot**: Google AI Studio (for interactive fashion assistant)
 
 ---
