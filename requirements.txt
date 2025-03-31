@@ -1,0 +1,10 @@
+tensorflow
+keras
+streamlit
+pickle
+numpy
+pandas
+openCV
+pillow
+scikit-learn
+google.generative ai
